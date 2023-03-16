@@ -25,13 +25,12 @@ const Todo = ({ dbInstance, setUpdate, update }) => {
 
   const sliceUserName = (user) => {
     let a = user?.split(' ')
-    if(a.length === 1){
+    if(a?.length === 1){
       return a[0]
     }
     else{
       return a[0] + ' ' + a[1]?.slice(0,1)+'.'
     }
-    
   }
 
   return (
