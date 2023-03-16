@@ -32,7 +32,7 @@ const Todo = ({ dbInstance, setUpdate, update }) => {
   return (
     <div className="flex flex-col gap-5 justify-center mt-20">
       {todos.map((todo) => (
-        <div key={todo.id} className="flex px-3 py-1 container mx-auto gap-3 w-full justify-between bg-slate-700 text-white rounded hover:bg-slate-600">
+        <div key={todo.id} className="flex p-4 py-2 container mx-auto gap-3 w-full justify-between bg-slate-700 text-white rounded hover:bg-slate-600">
           <p>{sliceUserName(todo.user)}</p>
           <h3>{todo.todo}</h3>
           <button
